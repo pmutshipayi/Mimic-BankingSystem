@@ -1,0 +1,74 @@
+﻿<simpleChildWindow:ChildWindow x:Class="ViewBankAccounts"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SmartPos.UI.Pos"
+             mc:Ignorable="d"
+             xmlns:simpleChildWindow="clr-namespace:MahApps.Metro.SimpleChildWindow;assembly=MahApps.Metro.SimpleChildWindow"
+             IsOpen="True"
+             ShowCloseButton="True"
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+             AllowMove="True"
+             Background="#eee"
+             Title="Accounts"
+             MinHeight="550" MinWidth="650"
+             d:DesignHeight="500" d:DesignWidth="300">
+    <simpleChildWindow:ChildWindow.OverlayBrush>
+        <SolidColorBrush Opacity="0.8" Color="{StaticResource Gray2}" />
+        <!--  or like the MahApps overlay
+    <SolidColorBrush Opacity="0.7" Color="{StaticResource BlackColor}" />
+    -->
+    </simpleChildWindow:ChildWindow.OverlayBrush>
+    <Grid MinHeight="400">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="2,0,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="2,3" x:Name="depositBtn" Click="DepositBtn_Click">Deposit</Button>
+                <Button Margin="2,3" x:Name="withdrawBtn">Withdraw</Button>
+                <Button Margin="2,3" x:Name="showStatmentBtn" Click="ShowStatmentBtn_Click">Show statement</Button>
+                <Button Margin="2,3" x:Name="deleteBtn">Delete</Button>
+            </StackPanel>
+            <DataGrid
+                x:Name="dataGrid"
+                IsReadOnly="True"
+                AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Account name" Binding="{Binding AccountName}" />
+                    <DataGridTextColumn Header="Account number" Binding="{Binding AccountNumber}" />
+                    <DataGridTextColumn Header="Balance" Binding="{Binding Balance, StringFormat='R {0}'}" />
+                    <DataGridTextColumn Header="Date created" Binding="{Binding DateDeposed}" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+
+        <GridSplitter 
+            Grid.Column="1" 
+            Width="5" 
+            Background="{DynamicResource AccentColorBrush}"  
+            HorizontalAlignment="Stretch" />
+        <TabControl Grid.Column="2">
+            <TabItem Header="Deposit">
+                <DataGrid IsReadOnly="True" x:Name="dataGridDeposit" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Amount"  Binding="{Binding Amount, StringFormat='R {0}'}" />
+                        <DataGridTextColumn Header="Reference" Binding="{Binding Reference}" />
+                        <DataGridTextColumn Header="Date" Binding="{Binding DateDeposed}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Withdraw">
+                <DataGrid x:Name="dataGridWithdraw" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Amount" Binding="{Binding Amount, StringFormat='R {0}'}" />
+                        <DataGridTextColumn Header="Date" Binding="{Binding DateWithdraw}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</simpleChildWindow:ChildWindow>

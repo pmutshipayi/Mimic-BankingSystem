@@ -1,0 +1,933 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BankingSystem
+</name>
+</assembly>
+<members>
+<member name="T:BankingSystem.My.MyWpfExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:BankingSystem.My.MyWpfExtension.Application">
+ <summary>
+ Returns the application object for the running application
+ </summary>
+</member>
+<member name="P:BankingSystem.My.MyWpfExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:BankingSystem.My.MyWpfExtension.User">
+ <summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:BankingSystem.My.MyWpfExtension.Log">
+ <summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member>
+<member name="P:BankingSystem.My.MyWpfExtension.Windows">
+ <summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
+</member>
+<member name="T:BankingSystem.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:BankingSystem.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:BankingSystem.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:BankingSystem.DbExtensions.DetachEntity``1(BankingSystem.AppDbCtx,``0,System.Int32)">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:BankingSystem.Utility.GenerateNumber(System.Int32)">
+ <summary>
+ Generate random numbers
+ </summary>
+ <param name="length"></param>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.AccountWithdrawHistory.AccountId">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.AccountWithdrawHistory.Amount">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.AccountWithdrawHistory.DateWithdraw">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.BankAccount.CustomerId">
+ <summary>
+ Get the id of the customer owner of the account
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.BankAccount.AccountName">
+ <summary>
+ Get or set the name of the account
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.BankAccount.AccountNumber">
+ <summary>
+ Get or set the account number
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.BankAccount.DateCreated">
+ <summary>
+ Get the date and time the account was created
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.BankAccount.Balance">
+ <summary>
+ Get or set the balance
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.BankAccount.IsActive">
+ <summary>
+ Get or set wether the account is active
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.BankAccount.Customer">
+ <summary>
+ Get the customer owner of the account
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.BankAccountDepositHistory.AccountId">
+ <summary>
+ Get or set the account id
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.BankAccountDepositHistory.Amount">
+ <summary>
+ Get or set the amount to deposit
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.BankAccountDepositHistory.Reference">
+ <summary>
+ Get or set the deposit reference
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.BankAccountDepositHistory.DateDeposed">
+ <summary>
+ Get or set the date and time the money has been deposit
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.BankAccountDepositHistory.Account">
+ <summary>
+ Get or set the bank account
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.Customer.IsActive">
+ <summary>
+ Get or set wether the customer account is not active
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.Customer.Accounts">
+ <summary>
+ Banks account for the customers
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.Customer.CountAccounts">
+ <summary>
+ Get or set total accounts for the customer
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.Entity.Clone">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.Person.FirstName">
+ <summary>
+ Get or set the first name
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.Person.LastName">
+ <summary>
+ Get or set the last name
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.Person.IDNumber">
+ <summary>
+ Get or set the customer ID number
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.Person.Email">
+ <summary>
+ Get or set the email address
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.Person.Phone">
+ <summary>
+ Get or set the phone number
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.Person.CellPhone">
+ <summary>
+ Get or set the cellphone number
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.Person.Address">
+ <summary>
+ Get or set the physical address
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.Person.DateOfBirth">
+ <summary>
+ Get or set the date of birth
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.Person.CreatedByUserId">
+ <summary>
+ Get or set the id of employee who create this customer
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.User.Password">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.User.Permissions">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.User.DateCreated">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.UserPermission.Permission">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.UserPermission.UserId">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:BankingSystem.UserPermission.User">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="F:BankingSystem.BankAccountService._db">
+ <summary>
+ The database contex 
+ </summary>
+</member>
+<member name="F:BankingSystem.BankAccountService._customerService">
+ <summary>
+ The customer service class
+ </summary>
+</member>
+<member name="F:BankingSystem.BankAccountService.AccountHolderNotFound">
+ <summary>
+ Error message the account holder is found
+ </summary>
+</member>
+<member name="F:BankingSystem.BankAccountService.AccountHolderSuspended">
+ <summary>
+ Error message the account has been suspended
+ </summary>
+</member>
+<member name="F:BankingSystem.BankAccountService.InvalidDepositAmount">
+ <summary>
+  Error message, when the amount to be deposit is invalid
+ </summary>
+</member>
+<member name="F:BankingSystem.BankAccountService.AccountSuspended">
+ <summary>
+ Error message when the bank account is suspended
+ </summary>
+</member>
+<member name="F:BankingSystem.BankAccountService.AmountToWithdrawMoreThanBalance">
+ <summary>
+ Error message when the amount to be withdraw is more than the account balance
+ </summary>
+</member>
+<member name="M:BankingSystem.BankAccountService.ActiveOrSuspendAsync(System.Collections.Generic.IEnumerable{BankingSystem.BankAccount},System.Boolean)">
+ <summary>
+ Activate or suspend accounts
+ </summary>
+ <param name="accounts"></param>
+ <param name="activate"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.BankAccountService.GetForDepositOrWithdraw(System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="accountId"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.BankAccountService.AccountNumberExistAsync(System.String)">
+ <summary>
+ Get wether the given account number exist
+ </summary>
+ <param name="accountNumber"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.BankAccountService.GetAsync(System.Int32)">
+ <summary>
+ Get a account by id
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.BankAccountService.GetAsync(System.Collections.Generic.IEnumerable{System.Int32})">
+ <summary>
+ Get bank accounts by id
+ </summary>
+ <param name="ids"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.BankAccountService.CreateAsync(BankingSystem.BankAccount)">
+ <summary>
+ Create a bank account
+ </summary>
+ <param name="bankAccount"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.BankAccountService.DeleteAsync(System.Collections.Generic.List{System.Int32})">
+ <summary>
+ Delete bank accounts
+ </summary>
+ <param name="ids"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.BankAccountService.SuspendAsync(System.Collections.Generic.List{System.Int32})">
+ <summary>
+ Suspend bank accounts
+ </summary>
+ <param name="ids"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.BankAccountService.ActivateAsync(System.Collections.Generic.List{System.Int32})">
+ <summary>
+ Active bank accounts
+ </summary>
+ <param name="ids"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.BankAccountService.DepositeAsync(System.Int32,System.Double)">
+ <summary>
+ Deposit money in an account
+ </summary>
+ <param name="accountId"></param>
+ <param name="amount"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.BankAccountService.WithdrawAsync(System.Int32,System.Int32)">
+ <summary>
+ Withdraw money in an account
+ </summary>
+ <param name="accountId"></param>
+ <param name="amount"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.BankAccountService.GetAllAccountOfUserAsync(System.Int32)">
+ <summary>
+ Get all bank accounts for a given customer
+ </summary>
+ <param name="userId"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.BankAccountService.GetAllDepositsAsync(System.Int32)">
+ <summary>
+ Get all deposits history for the given account
+ </summary>
+ <param name="accountId"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.BankAccountService.GetAllWithdrawAsync(System.Int32)">
+ <summary>
+ Get all withdraw of the given account
+ </summary>
+ <param name="accountId"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.CustomerService.#ctor(BankingSystem.AppDbCtx)">
+ <summary>
+ Constructor
+ </summary>
+ <param name="db"></param>
+</member>
+<member name="M:BankingSystem.CustomerService.IDNumberExistAsnyc(System.String)">
+ <summary>
+ Check if the ID number already exist
+ </summary>
+ <param name="idNumber"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.CustomerService.GetAsync(System.Int32)">
+ <summary>
+ Get a customer by id
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.CustomerService.CreateAsync(BankingSystem.Customer)">
+ <summary>
+ Create a customer
+ </summary>
+ <param name="customer"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.CustomerService.DeleteAsync(System.Collections.Generic.List{System.Int32})">
+ <summary>
+ Delete customers
+ </summary>
+ <param name="ids"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.CustomerService.UpdateAsync(BankingSystem.Customer)">
+ <summary>
+ Update a customer
+ </summary>
+ <param name="updated"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.CustomerService.GetAccounts(System.Int32)">
+ <summary>
+ Get all bank accounts of the given customer
+ </summary>
+ <param name="customerId"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.CustomerService.GetAllAsync">
+ <summary>
+ Get all customers
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.CustomerService.GetAsync(System.String)">
+ <summary>
+ Get customer by id number
+ </summary>
+ <param name="idNumber"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.EmployeeService.IsEmailExistAsync(System.String)">
+ <summary>
+ Check wether the given email address alrady exist
+ </summary>
+ <param name="email"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.EmployeeService.GetByIdAsync(System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.EmployeeService.CreateUserAsync(BankingSystem.User)">
+ <summary>
+ Create a user account
+ </summary>
+ <param name="user"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.EmployeeService.DeleteAccountsAsync(System.Collections.Generic.List{System.Int32})">
+ <summary>
+ Delete accounts
+ </summary>
+ <param name="ids">user ids to deleted</param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.EmployeeService.UpdateAsync(BankingSystem.User)">
+ <summary>
+ Update an employee account
+ </summary>
+ <param name="updated"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.EmployeeService.SetPermissionsAsync(System.Int32,System.Collections.Generic.List{BankingSystem.Permission})">
+ <summary>
+ Set user permissions
+ </summary>
+ <param name="userId"></param>
+ <param name="permissions"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.EmployeeService.LoginAsync(System.String,System.String)">
+ <summary>
+ Login
+ </summary>
+ <param name="userName"></param>
+ <param name="password"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.EmployeeService.GetAllAsync">
+ <summary>
+ Get all employees
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.EmployeeService.GetAsync(System.String)">
+ <summary>
+ Get a user by username (email or id numer)
+ </summary>
+ <param name="username"></param>
+ <returns></returns>
+</member>
+<member name="T:BankingSystem.AccountProfile">
+<summary>
+AccountProfile
+</summary>
+</member>
+<member name="M:BankingSystem.AccountProfile.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:BankingSystem.AddBankAccountForm">
+<summary>
+AddBankAccountForm
+</summary>
+</member>
+<member name="M:BankingSystem.AddBankAccountForm.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:BankingSystem.CustomerMainControl">
+<summary>
+CustomerMainControl
+</summary>
+</member>
+<member name="M:BankingSystem.CustomerMainControl.FetchData">
+ <summary>
+ Fetch customers
+ </summary>
+</member>
+<member name="M:BankingSystem.CustomerMainControl.SearchBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When search button is clicked
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.CustomerMainControl.AddNewBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When add button is clicked
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.CustomerMainControl.ClearFormBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When clear button is clicked
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.CustomerMainControl.ClearForm">
+ <summary>
+ Clear the form
+ </summary>
+</member>
+<member name="M:BankingSystem.CustomerMainControl.AddBankAccountBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When create bank account button is clicked
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.CustomerMainControl.ViewAccountBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When view accounts buttons is clicked
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.CustomerMainControl.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:BankingSystem.CustomerProfile">
+<summary>
+CustomerProfile
+</summary>
+</member>
+<member name="M:BankingSystem.CustomerProfile.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:BankingSystem.DepositDialog">
+<summary>
+DepositDialog
+</summary>
+</member>
+<member name="M:BankingSystem.DepositDialog.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:BankingSystem.CustomersListControl">
+<summary>
+CustomersListControl
+</summary>
+</member>
+<member name="M:BankingSystem.CustomersListControl.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:BankingSystem.ViewBankAccounts">
+<summary>
+ViewBankAccounts
+</summary>
+</member>
+<member name="M:BankingSystem.ViewBankAccounts.FetchAccounts">
+ <summary>
+ Fetch all acounts for the selected customer
+ </summary>
+</member>
+<member name="M:BankingSystem.ViewBankAccounts.ShowStatmentBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When show statement button is clicked
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.ViewBankAccounts.RefreshStatement">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:BankingSystem.ViewBankAccounts.RefreshDepositHistory(System.Int32)">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:BankingSystem.ViewBankAccounts.RefreshWithdrawHistory(System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="accountId"></param>
+</member>
+<member name="M:BankingSystem.ViewBankAccounts.DepositBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When deposit button is clicked
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.ViewBankAccounts.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:BankingSystem.HomeView">
+<summary>
+HomeView
+</summary>
+</member>
+<member name="M:BankingSystem.HomeView.FetchAccounts">
+ <summary>
+ Fetch all acounts for the selected customer
+ </summary>
+</member>
+<member name="M:BankingSystem.HomeView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:BankingSystem.LoginWindow">
+<summary>
+LoginWindow
+</summary>
+</member>
+<member name="M:BankingSystem.LoginWindow.LoginBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When login button is clicked
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.LoginWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:BankingSystem.ChangePasswordView">
+<summary>
+ChangePasswordView
+</summary>
+</member>
+<member name="M:BankingSystem.ChangePasswordView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:BankingSystem.StaffForm">
+<summary>
+StaffForm
+</summary>
+</member>
+<member name="M:BankingSystem.StaffForm.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:BankingSystem.StaffView">
+<summary>
+StaffView
+</summary>
+</member>
+<member name="F:BankingSystem.StaffView._userService">
+ <summary>
+ The employee service class
+ </summary>
+</member>
+<member name="F:BankingSystem.StaffView._data">
+ <summary>
+ Hold all employees and it bindided to the datagrid
+ </summary>
+</member>
+<member name="F:BankingSystem.StaffView._win">
+ <summary>
+ Represent the current active window
+ </summary>
+</member>
+<member name="M:BankingSystem.StaffView.FetchData">
+ <summary>
+ fetch all employees
+ </summary>
+</member>
+<member name="M:BankingSystem.StaffView.RefreshBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When refresh button is clicked, re fetch the data
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.StaffView.AddNew_Click_1(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When Add new employee button is clicked
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.StaffView.ClearFormBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When clear form button is clicked
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.StaffView.ClearForm">
+ <summary>
+ Clear the form
+ </summary>
+</member>
+<member name="M:BankingSystem.StaffView.SearchBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When search button is clicked
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.StaffView.DeleteBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When delete button is clicked
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.StaffView.UpdateBtn_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When update button is clicked
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.StaffView.UpdatePassword_Click(System.Object,System.Windows.RoutedEventArgs)">
+ <summary>
+ When the change password button is clicked
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.StaffView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:BankingSystem.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:BankingSystem.Application.CreateDb">
+ <summary>
+ Entablish connection to the database or create the database 
+ </summary>
+</member>
+<member name="M:BankingSystem.Application.ConfigureContainer">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:BankingSystem.Application.ComposeObjects">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:BankingSystem.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:BankingSystem.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="M:BankingSystem.AppDbCtx.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{BankingSystem.AppDbCtx})">
+ <summary>
+ 
+ </summary>
+ <param name="dbContext"></param>
+</member>
+<member name="M:BankingSystem.AppDbCtx.Validate">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:BankingSystem.AppDbCtx.SaveChanges">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:BankingSystem.AppDbCtx.SaveChangesAsync(System.Threading.CancellationToken)">
+ <summary>
+ 
+ </summary>
+ <param name="cancellationToken"></param>
+ <returns></returns>
+</member>
+<member name="T:BankingSystem.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:BankingSystem.MainWindow.HamburgerMenuControl_ItemClick(System.Object,MahApps.Metro.Controls.ItemClickEventArgs)">
+ <summary>
+ Onclick left menu
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:BankingSystem.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:BankingSystem.CustomerNewControl">
+<summary>
+CustomerNewControl
+</summary>
+</member>
+<member name="M:BankingSystem.CustomerNewControl.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:BankingSystem.XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+<summary>
+GeneratedInternalTypeHelper
+</summary>
+</member>
+<member name="M:BankingSystem.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+<summary>
+CreateInstance
+</summary>
+</member>
+<member name="M:BankingSystem.XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+<summary>
+GetPropertyValue
+</summary>
+</member>
+<member name="M:BankingSystem.XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+<summary>
+SetPropertyValue
+</summary>
+</member>
+<member name="M:BankingSystem.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+<summary>
+CreateDelegate
+</summary>
+</member>
+<member name="M:BankingSystem.XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+<summary>
+AddEventHandler
+</summary>
+</member>
+</members>
+</doc>

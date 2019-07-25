@@ -1,0 +1,20 @@
+﻿BankingSystem
+
+
+winexe
+VB
+.vb
+C:\Users\user\Documents\Visual Studio 2019\Projects\BankSystem\BankingSystem\obj\Debug\
+BankingSystem
+none
+false
+
+C:\Users\user\Documents\Visual Studio 2019\Projects\BankSystem\BankingSystem\Application.xaml
+17-8933511
+21478179148
+41-1143943662
+158-1267844390
+Views\Customers\AddBankAccountForm.xaml;Views\Customers\DepositDialog.xaml;Views\Customers\ViewBankAccounts.xaml;Views\HomeView.xaml;Views\MainWindow.xaml;Resources\Styles\DefaultStyle.xaml;Views\Assets\Icons.xaml;Views\Assets\IconsNonShared.xaml;Views\Customers\AccountProfile.xaml;Views\Customers\CustomerMainControl.xaml;Views\Customers\CustomerProfile.xaml;Views\Customers\PersonForm.xaml;Views\Customers\CustomersListControl.xaml;Views\LoginWindow.xaml;Views\Staffs\ChangePasswordView.xaml;Views\Staffs\StaffForm.xaml;Views\Staffs\StaffView.xaml;
+
+True
+

@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="AccountProfile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <TabControl>
+        <TabItem Header="Account">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="deleteBtn" Background="Red" Foreground="White">Delete account</Button>
+                    <Button x:Name="suspendBtn" Margin="3,0">Suspend or activate</Button>
+                </StackPanel>
+                <Grid Margin="0,5,0,0" Height="100" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="31*"/>
+                        <ColumnDefinition Width="127*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="18*"/>
+                        <RowDefinition Height="18*"/>
+                        <RowDefinition Height="18*"/>
+                        <RowDefinition Height="18*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Account number" Grid.Row="0" Grid.ColumnSpan="2" />
+                    <TextBlock Text="Balance" Grid.Row="1" Grid.ColumnSpan="2"/>
+                    <TextBlock Text="Date created" Grid.Row="2" Grid.ColumnSpan="2" />
+                    <TextBlock Text="Is active" Grid.Row="3" Grid.ColumnSpan="2" />
+
+                    <TextBlock x:Name="accountNumber" Text="123456789" Grid.Column="1" />
+                    <TextBlock x:Name="blance" Text="R 125.00" Grid.Column="1" Grid.Row="1" />
+                    <TextBlock x:Name="dateCreated" Text="12 juin 2019" Grid.Column="1" Grid.Row="2" />
+                    <TextBlock x:Name="isActive" Text="Yes" Grid.Column="1" Grid.Row="4" />
+                </Grid>
+            </StackPanel>
+        </TabItem>
+        <TabItem Header="Deposit" Height="39" VerticalAlignment="Top">
+            <DockPanel>
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                    <TextBox Width="120" Controls:TextBoxHelper.Watermark="Amount" />
+                    <TextBox Margin="3,0" Width="180" Controls:TextBoxHelper.Watermark="Reference" />
+                    <Button Margin="3,0" x:Name="depositBtn">Deposit</Button>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock Text="History"
+                               FontSize="18"
+                               FontWeight="Bold"/>
+                    <DataGrid Margin="0,5,0,00">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Amount" />
+                            <DataGridTextColumn Header="Date" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </DockPanel>
+        </TabItem>
+        <TabItem Header="Withdraw">
+            <DockPanel>
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                    <TextBox Width="120" Controls:TextBoxHelper.Watermark="Amount" />
+                    <Button Margin="3,0" x:Name="withdrawBtn">Withdraw</Button>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock Text="History"
+                               FontSize="18"
+                               FontWeight="Bold"/>
+                    <DataGrid Margin="0,5,0,00">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Amount" />
+                            <DataGridTextColumn Header="Date" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </DockPanel>
+        </TabItem>
+    </TabControl>
+</UserControl>

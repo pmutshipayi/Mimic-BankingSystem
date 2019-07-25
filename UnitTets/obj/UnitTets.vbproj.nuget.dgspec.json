@@ -1,0 +1,130 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\user\\Documents\\Visual Studio 2019\\Projects\\BankSystem\\UnitTets\\UnitTets.vbproj": {}
+  },
+  "projects": {
+    "C:\\Users\\user\\Documents\\Visual Studio 2019\\Projects\\BankSystem\\BankingSystem\\BankingSystem.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\Documents\\Visual Studio 2019\\Projects\\BankSystem\\BankingSystem\\BankingSystem.vbproj",
+        "projectName": "BankingSystem",
+        "projectPath": "C:\\Users\\user\\Documents\\Visual Studio 2019\\Projects\\BankSystem\\BankingSystem\\BankingSystem.vbproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\user\\Documents\\Visual Studio 2019\\Projects\\BankSystem\\UnitTets\\UnitTets.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\Documents\\Visual Studio 2019\\Projects\\BankSystem\\UnitTets\\UnitTets.vbproj",
+        "projectName": "UnitTets",
+        "projectPath": "C:\\Users\\user\\Documents\\Visual Studio 2019\\Projects\\BankSystem\\UnitTets\\UnitTets.vbproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Documents\\Visual Studio 2019\\Projects\\BankSystem\\UnitTets\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Developer\\API and Frameworks\\NuGet packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\user\\Documents\\Visual Studio 2019\\Projects\\BankSystem\\BankingSystem\\BankingSystem.vbproj": {
+                "projectPath": "C:\\Users\\user\\Documents\\Visual Studio 2019\\Projects\\BankSystem\\BankingSystem\\BankingSystem.vbproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "MahApps.Metro": {
+              "target": "Package",
+              "version": "[1.6.5, )"
+            },
+            "MahApps.Metro.IconPacks": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "MahApps.Metro.IconPacks.Material": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "MahApps.Metro.SimpleChildWindow": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.12.0, )"
+            },
+            "Ninject": {
+              "target": "Package",
+              "version": "[3.3.4, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.111, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.111, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
